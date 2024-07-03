@@ -1,0 +1,236 @@
+/*Css pentru navigatie*/
+.navigatie {
+  background-color: #141e4c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  justify-content: center;
+}
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 10px;
+  padding: 0;
+  margin: 0;
+}
+.navImg {
+  width: calc(100% / 3.8);
+}
+/*
+.navImg {
+  width: 50%;
+  padding-left: 15px;
+  height: 60px;
+}*/
+.nav-a-list {
+  color: antiquewhite;
+  text-decoration: none;
+  font-size: 75%;
+  padding: 16px;
+}
+.welcome {
+  height: 100%;
+  width: 100%;
+  background-color: #141e4c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  flex-grow: 1;
+}
+.welcome-container img {
+  height: 24px;
+  width: auto;
+  position: relative;
+  margin-left: 30px;
+  padding-left: 10px;
+}
+
+/* css general*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+.welcome-container span {
+  color: rgb(200, 206, 11);
+}
+.welcome-button {
+  text-decoration: none;
+  color: azure;
+  background-color: #2bb686;
+  border: 2px solid #2bb686;
+  border-radius: 5px;
+  padding: 8px;
+  text-align: center;
+  width: 200px;
+  display: block;
+}
+.welcome-button:hover {
+  background-color: #141e4c;
+}
+.today {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/*Css Calendar*/
+
+/*
+.containerCalendar1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.container-calendar-mic {
+  border: 1px solid rgb(139, 138, 138);
+  border-radius: 3px;
+  margin-top: 20px;
+  padding-left: 5px;
+  padding: var(--spacing-medium) var(--spacing-small);
+}
+.container-calendar-mic {
+  text-align: left;
+}
+.containerPython {
+  display: flex;
+  gap: 10px;
+}*/
+.container-cursuri-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  align-content: space-between;
+
+  /*
+  width: 100%;
+  height: 75%;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;*/
+  /*
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0 0 auto;*/
+}
+
+.container-cursuri-mini {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 15px;
+  border: 2px solid rgb(181, 181, 181);
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+
+  /*
+  flex: 1;
+  height: 40%;
+  text-align: center;
+
+  border: 1px solid #ccc;
+  margin: 5px 10px;*/
+}
+.container-cursuri-mini hr {
+  border: #2bb686 2px solid;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+.locatie {
+  background-color: #fbb44c;
+}
+.stilizareDate {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.text-cine-suntem {
+  text-align: center;
+}
+
+.containerImg {
+  content: "";
+  clear: both;
+  display: table;
+  justify-content: center;
+}
+
+.containerImg img {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.ItSchool-despre {
+  display: flex;
+  flex-direction: column;
+  background-color: #dfedf5;
+  padding: 0px 50px 40px 50px;
+  justify-content: center;
+  calc: (100%/2);
+}
+
+.parteneri {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-evenly;
+}
+.parteneri img {
+  width: 17%;
+  height: auto;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #141e4c;
+  color: #dfedf5;
+}
+.parteneri_h {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 990px) {
+  .nav-list {
+    display: none;
+  }
+  .container-cursuri-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .containerImg {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /*bug here- cauta solutie*/
+  .ItSchool-despre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .welcome {
+    justify-content: center;
+  }
+}
